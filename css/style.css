@@ -1,0 +1,174 @@
+
+{
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+color: #333;
+background-color: #f5f5f5;
+}
+
+header,
+main,
+footer {
+max-width: 1100px;
+margin: 0 auto;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background-color: #5b3fd9;
+color: white;
+}
+
+header h1 {
+margin: 0;
+}
+
+nav {
+display: flex;
+gap: 20px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+/* Secțiuni */
+section {
+margin: 30px 0;
+padding: 20px;
+background-color: white;
+border-radius: 8px;
+}
+
+h2 {
+color: #5b3fd9;
+}
+
+/* Cardurile destinațiilor */
+#destinatii > * {
+margin-bottom: 15px;
+}
+
+#destinatii {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 20px;
+}
+
+#destinatii h2 {
+grid-column: 1 / -1;
+}
+
+#destinatii article {
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 10px;
+background-color: #fff;
+}
+
+#destinatii article:hover {
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#destinatii article h3 {
+margin-top: 0;
+color: #5b3fd9;
+}
+
+/* Destinația evidențiată */
+#destinatii article.featured {
+border: 2px solid #5b3fd9;
+background-color: #eeeaff;
+}
+
+/* Formular */
+form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+form div {
+display: flex;
+flex-direction: column;
+}
+
+label {
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+input,
+select {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+
+input:focus,
+select:focus {
+outline: 2px solid #5b3fd9;
+border-color: #5b3fd9;
+}
+
+button {
+padding: 12px 20px;
+border: none;
+border-radius: 5px;
+background-color: #5b3fd9;
+color: white;
+font-size: 16px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #452eb0;
+}
+
+/* Recomandări */
+#recomandari ul {
+padding-left: 25px;
+}
+
+#recomandari li {
+margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+padding: 20px;
+text-align: center;
+color: #666;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+header {
+flex-direction: column;
+gap: 15px;
+text-align: center;
+}
+
+nav {
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html> <html lang="ro"> <head> <link rel="stylesheet" href="css/style.css">
+ <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>City Explorer</title> </head> <body>
+<header>
+    <h1>City Explorer</h1>
+
+    <nav>
+        <a href="#destinatii">Destinații</a>
+        <a href="#planifica">Planifică</a>
+        <a href="#recomandari">Recomandări</a>
+    </nav>
+</header>
+
+<main>
+
+    <section id="destinatii">
+        <h2>Destinații</h2>
+
+        <article class="featured">
+            <h3>Lisabona</h3>
+            <p><strong>Țara:</strong> Portugalia</p>
+            <p>
+                Un oraș colorat, cu străzi înguste, tramvaie istorice
+                și priveliști frumoase asupra Oceanului Atlantic.
+            </p>
+            <p><strong>Durata recomandată:</strong> 4 zile</p>
+        </article>
+
+        <article>
+            <h3>Paris</h3>
+            <p><strong>Țara:</strong> Franța</p>
+            <p>
+                Capitala Franței este cunoscută pentru Turnul Eiffel,
+                muzeele sale și atmosfera romantică.
+            </p>
+            <p><strong>Durata recomandată:</strong> 5 zile</p>
+        </article>
+
+        <article>
+            <h3>Roma</h3>
+            <p><strong>Țara:</strong> Italia</p>
+            <p>
+                Un oraș plin de istorie, unde pot fi vizitate Colosseumul,
+                Vaticanul și numeroase piețe și fântâni.
+            </p>
+            <p><strong>Durata recomandată:</strong> 4 zile</p>
+        </article>
+
+        <article>
+            <h3>Barcelona</h3>
+            <p><strong>Țara:</strong> Spania</p>
+            <p>
+                O destinație vibrantă, renumită pentru arhitectura lui
+                Antoni Gaudí, plajele sale și gastronomia locală.
+            </p>
+            <p><strong>Durata recomandată:</strong> 4 zile</p>
+        </article>
+
+        <article>
+            <h3>Praga</h3>
+            <p><strong>Țara:</strong> Cehia</p>
+            <p>
+                Un oraș cu arhitectură medievală, poduri spectaculoase
+                și o atmosferă plăcută în centrul istoric.
+            </p>
+            <p><strong>Durata recomandată:</strong> 3 zile</p>
+        </article>
+
+    </section>
+
+    <section id="planifica">
+        <h2>Planifică</h2>
+
+        <form>
+            <div>
+                <label for="name">Nume</label>
+                <input id="name" name="name" type="text">
+            </div>
+
+            <div>
+                <label for="destination">Destinație</label>
+                <select id="destination" name="destination">
+                    <option value="">Alege...</option>
+                    <option value="Lisabona">Lisabona</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Roma">Roma</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Praga">Praga</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="days">Număr de zile</label>
+                <input id="days" name="days" type="number" min="1">
+            </div>
+
+            <button type="submit">Planifică excursia</button>
+        </form>
+    </section>
+
+    <section id="recomandari">
+        <h2>Recomandări</h2>
+
+        <ul>
+            <li>Verifică vremea înainte de plecare și pregătește haine potrivite.</li>
+            <li>Vizitează obiectivele turistice importante dimineața pentru a evita aglomerația.</li>
+            <li>Încearcă preparatele tradiționale ale orașului vizitat.</li>
+            <li>Păstrează o copie a documentelor importante în cazul în care le pierzi.</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>Autor: Serban Rares-Mihai | 2026</p>
+</footer>
+
+</body> </html>
